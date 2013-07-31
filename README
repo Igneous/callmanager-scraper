@@ -1,0 +1,4 @@
+A scraper for grabbing phone registration information from CUCM9.1.
+The AXL query to do this runs into the RisPort limitation of 18 queries a minute and unpredictably truncated results.
+
+So.. until that's fixed -- this exists.
