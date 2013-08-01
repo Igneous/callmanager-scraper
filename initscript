@@ -1,0 +1,6 @@
+#!/bin/bash
+
+SCRAPER_PATH="/var/www/shitsco-scraper/scraper-daemon.rb"
+ruby $SCRAPER_PATH $1
+
+exit $?

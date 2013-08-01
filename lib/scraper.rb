@@ -1,6 +1,4 @@
-require 'watir-webdriver'
-require 'nokogiri'
-require 'headless'
+[ 'watir-webdriver', 'nokogiri' ].each { |gem| require gem }
 
 class ShitscoScraper 
 

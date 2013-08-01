@@ -1,12 +1,7 @@
 #!/usr/bin/env ruby
-path = File.expand_path $0
-path = File.dirname(path)
-require "#{path}/lib/scraper.rb"
-require 'syck'
-require 'headless'
-require 'sinatra'
-require 'yaml'
-require 'pry'
+path = File.dirname(File.expand_path $0)
+[ "#{path}/lib/scraper.rb", 'rubygems', 'sinatra', 'headless',
+  'syck', 'bundler/setup' ].each { |gem| require gem }
 
 # -- svc settings -- #
 set :port, 8081
